@@ -7,15 +7,32 @@ const Header = () => {
     <header className="header">
       <div className="container">
         <div className="logo">
-          <h1>MyLogo</h1>
+          <h1>Chigo</h1>
         </div>
         <nav>
           <ul>
-            <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About Me</Link></li>
+            <li className='menu-item '>
+              <Link to="/">
+              <button className='homepage-button'>
+              Home
+              </button>
+              </Link>
+              </li>
+            <li>
+              <Link to="/about">
+              <button className='about-button'>
+                About Me
+                </button>
+              </Link>
+              </li>
           </ul>
         </nav>
       </div>
+      <form onsubmit="event.preventDefault();" role="search">
+  <label for="search">Search for stuff</label>
+  <input id="search" type="search" placeholder="Search..." autofocus required />
+  <button type="submit">Go</button>    
+</form>
     </header>
   );
 };

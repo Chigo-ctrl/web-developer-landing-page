@@ -8,7 +8,7 @@ const Skills = () => {
       <div className="skills-grid">
         <div className="skill-item">HTML & CSS</div>
         <div className="skill-item">JavaScript</div>
-        <div className="skill-item">React</div>
+        <div className="skill-item">TailwindCSS</div>
         <div className="skill-item">Node.js</div>
       </div>
     </section>

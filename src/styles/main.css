@@ -1,9 +1,31 @@
 /* General Styles */
 body {
     font-family: Arial, sans-serif;
+    place-items: center;
     margin: 0;
     padding: 0;
     color: #333;
+    
+}
+html {
+	height: 100vh;
+	--u: 10px;
+	--c1: #3b393d;
+	--c2: #43413e;
+	--c3: #1F1F1F;
+	--gp: 50%/ calc(var(--u) * 16.9) calc(var(--u) * 12.8);
+	background: 
+		conic-gradient(from 122deg at 50% 85.15%, var(--c2) 0 58deg, var(--c3) 0 116deg, #fff0 0 100%) var(--gp),
+		conic-gradient(from 122deg at 50% 72.5%, var(--c1) 0 116deg, #fff0 0 100%) var(--gp),
+		conic-gradient(from 58deg at 82.85% 50%, var(--c3) 0 64deg, #fff0 0 100%) var(--gp),
+		conic-gradient(from 58deg at 66.87% 50%, var(--c1) 0 64deg, var(--c2) 0 130deg, #fff0 0 100%) var(--gp),
+		conic-gradient(from 238deg at 17.15% 50%, var(--c2) 0 64deg, #fff0 0 100%) var(--gp),
+		conic-gradient(from 172deg at 33.13% 50%, var(--c3) 0 66deg, var(--c1) 0 130deg, #fff0 0 100%) var(--gp),
+		linear-gradient(98deg, var(--c3) 0 15%, #fff0 calc(15% + 1px) 100%) var(--gp),
+		linear-gradient(-98deg, var(--c2) 0 15%, #fff0 calc(15% + 1px) 100%) var(--gp),
+		conic-gradient(from -58deg at 50.25% 14.85%, var(--c3) 0 58deg, var(--c2) 0 116deg, #fff0 0 100%) var(--gp),
+		conic-gradient(from -58deg at 50% 28.125%, var(--c1) 0 116deg, #fff0 0 100%) var(--gp),
+		linear-gradient(90deg, var(--c2) 0 50%, var(--c3) 0 100%) var(--gp);
 }
 
 .container {
@@ -11,6 +33,7 @@ body {
     max-width: 1200px;
     margin: 0 auto;
 }
+
 
 /* Header */
 .header {
@@ -86,4 +109,10 @@ body {
 }
 
 /* Footer */
-footer
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 3rem;
+}

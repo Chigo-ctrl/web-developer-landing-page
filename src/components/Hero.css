@@ -1,0 +1,30 @@
+/* Hero Section */
+body{
+    padding: 0;
+    text-align: ;
+}
+.hero {
+    display: flex;
+    color: #fff;
+    
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 2rem 0;
+}
+
+.hero-text {
+    flex: 1;
+    padding-right: 2rem;
+    margin: 20px;
+}
+
+.hero-image {
+    flex: 1;
+}
+
+.hero-image img {
+    width: 200px;
+    border-radius: 50%;
+    height: 200px;
+    object-fit: cover;
+}

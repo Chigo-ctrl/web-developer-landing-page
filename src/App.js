@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Skills from './components/Skills';
 import AboutMe from './components/AboutMe';
+import Footer from './components/Footer';
 
 function App() {
   return (
@@ -18,7 +19,9 @@ function App() {
         } />
         <Route path="/about" element={<AboutMe />} />
       </Routes>
+      <Footer />
     </Router>
+  
   );
 }
 
